@@ -68,6 +68,7 @@ function casaDeCambio(){
             pesos
         },
     }
-    convert(paises[pais]);
+    if(pais in paises) convert(paises[pais]);
+    else console.log("pais no valido para hacer el cambio");
 }
 casaDeCambio();
