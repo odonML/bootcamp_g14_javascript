@@ -29,20 +29,20 @@ Ejercicio 2:
 Ejercicio 3:
     Solicitar el nombre completo a un usuario e indicarle cuantas vocales tiene.
 */
-// const vocals = function(){
-//     let nombreCompleto = prompt("dame tu nombre completo");
-//     let arrayNombre = nombreCompleto.toLowerCase().split("");
-//     const vocales = ["a", "e", "i", "o", "u"];
-//     let count = 0;
-//     arrayNombre.forEach((e)=>{
-//         let find = vocales.indexOf(e);
-//         if(find != -1){
-//             count++;
-//         }
-//     })
-//     return count;
-// }
-// console.log(vocals())
+const vocals = function(){
+    let nombreCompleto = prompt("dame tu nombre completo");
+    let arrayNombre = nombreCompleto.toLowerCase().split("");
+    const vocales = ["a", "e", "i", "o", "u"];
+    let count = 0;
+    arrayNombre.forEach((e)=>{
+        let find = vocales.indexOf(e);
+        if(find != -1){
+            count++;
+        }
+    })
+    return count;
+}
+console.log(vocals())
 //====================================================================================
 /*
 Ejercicio 4:
