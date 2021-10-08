@@ -110,13 +110,3 @@ Imprimir en consola el siguiente patrón
 //     console.log(cadenaCamel)
 // }
 // camelCase()
-
-// input: Kodemia
-// output: aimedoK;
-
-function reverse(){
-    let cadena = "Kodemia";
-    let reverse = cadena.split("").reverse().join("");
-    console.log(reverse);
-}
-reverse();
