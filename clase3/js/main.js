@@ -72,13 +72,41 @@ Imprimir en consola el siguiente patrón
 **********
 */
 
-function pino(){
-    let caracter = "*";
-    let niveles = 10;
-    let print = "";
-    for(let i = 1; i<=niveles; i++){
-        print += caracter;
-        console.log(print);
-    }
-}
-pino()
+// function pino(){
+//     let caracter = "*";
+//     let niveles = 10;
+//     let print = "";
+//     for(let i = 1; i<=niveles; i++){
+//         print += caracter;
+//         console.log(print);
+//     }
+// }
+// pino()
+
+// const aleatorio =function(){
+//     let num = parseInt(prompt("dame un numero"));
+//     let text = ""
+//     for(let i = 0; i<num; i++){
+//         let random =Math.floor( Math.random()*(91 - 48)) + 48;
+//         let randomMas = 168;
+//         const caracter = String.fromCharCode(random, randomMas);
+//         text += caracter;
+//     }
+//     return text;
+// }
+// console.log(aleatorio())
+
+
+// function camelCase(){
+//     let cadena = "hola papus";
+//     let cadenaCamel = "";
+//     for(let i = 0; i<cadena.length; i++){
+//         if(i%2 !== 0){
+//             cadenaCamel += cadena[i].toLowerCase();
+//         }else{
+//             cadenaCamel += cadena[i].toUpperCase();
+//         }
+//     }
+//     console.log(cadenaCamel)
+// }
+// camelCase()
