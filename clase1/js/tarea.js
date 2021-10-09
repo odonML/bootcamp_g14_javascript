@@ -48,6 +48,9 @@ function convert({moneda, simbolo, pesos}){
     let cambio = pesos/moneda;
     return console.log(`${pesos} MXM equivalen a ${simbolo}${cambio.toFixed(2)}`);
 }
+// function convert(a){
+//     console.log(a);
+// }
 function casaDeCambio(){
     let pesos = Number(prompt("introduce la cantidad que deseas convertir?"));
     let pais = prompt("escribe uno de estos paises, USA, EU ó UK?");
@@ -55,7 +58,8 @@ function casaDeCambio(){
         USA: {
             moneda: 20.45,
             simbolo: "$",
-            pesos
+            pesos,
+            // convert: function(moneda){ return convert(moneda)},
         },
         EU: {
             moneda: 23.71,
@@ -68,6 +72,10 @@ function casaDeCambio(){
             pesos
         },
     }
+    // console.log(pais)
+    // if(pais in paises) paises[pais].convert(paises[pais].moneda);
+
+
     if(pais in paises) convert(paises[pais]);
     else console.log("pais no valido para hacer el cambio");
 }
