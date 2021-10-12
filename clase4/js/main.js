@@ -317,7 +317,7 @@ const cartShoppings = [
 const productType = (product) =>{
     let products = [];
     cartShoppings.forEach((cartShoppingsProduct) => {
-        if (cartShoppingsProduct.type === product) products.push(cartShoppingsProduct);
+        if (cartShoppingsProduct["type"] === product) products.push(cartShoppingsProduct);
     });
     return products;
 }
@@ -325,18 +325,15 @@ const productType = (product) =>{
 const productPrice = (condition) =>{
     let products = [];
     cartShoppings.forEach((cartShoppingsProduct) => {
-        if (condition === "menos" && cartShoppingsProduct.price < 50) products.push(cartShoppingsProduct);
-        else if(condition === "mas" && cartShoppingsProduct.price >= 50) products.push(cartShoppingsProduct);
+        if ((condition === "menos" && cartShoppingsProduct["price"] < 50) || (condition === "mas" && cartShoppingsProduct["price"] >= 50) ) products.push(cartShoppingsProduct);
     });
     return products;
 }
 
-const total = (rango) => {
+const total = (rango = null) => {
     let sumatoria = 0;
     cartShoppings.forEach((product) => {
-        if(rango === "todo") sumatoria += product.price;
-        else if(rango === "chip" && product.type === rango) sumatoria += product.price;
-        else if(rango === "drink" && product.type === rango) sumatoria += product.price;
+      if(product["type"] === rango || rango === null) sumatoria += product["price"];
     })
     return sumatoria;
 }
@@ -345,6 +342,6 @@ console.log(productType("drink"));
 console.log(productType("chip"));
 console.log(productPrice("menos"));
 console.log(productPrice("mas"));
-console.log(total("todo"));
+console.log(total());
 console.log(total("chip"));
 console.log(total("drink"));
