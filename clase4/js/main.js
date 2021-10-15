@@ -338,10 +338,10 @@ const total = (rango = null) => {
     return sumatoria;
 }
 
-console.log(productType("drink"));
-console.log(productType("chip"));
-console.log(productPrice("menos"));
-console.log(productPrice("mas"));
-console.log(total());
-console.log(total("chip"));
-console.log(total("drink"));
+// console.log(productType("drink"));
+// console.log(productType("chip"));
+// console.log(productPrice("menos"));
+// console.log(productPrice("mas"));
+// console.log(total());
+// console.log(total("chip"));
+// console.log(total("drink"));
