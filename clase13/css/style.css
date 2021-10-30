@@ -1,0 +1,33 @@
+#figure{
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+}
+
+.cuadrado{
+    border: solid red 1px;
+}
+.rectangulo{
+    width: 70px !important;
+    border: solid blue 1px;
+}
+.circulo{
+    border-radius: 50%;
+    border: solid purple 1px;
+}
+#listNumber{
+    display: flex;
+}
+.number{
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: solid 1px black;
+    transition: all .2s;
+}
+.active{
+    border: none;
+    color: white;
+    background-color: green;
+}
